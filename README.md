@@ -1,6 +1,6 @@
 # VHDL
 
-As part of my coursework at Toronto Metropoliton University, my partner and I completed several design projects to implement VDHL code on an FPGA Board (Cyclone- II EP2C35F672C6) in Quartus II. 
+As part of coursework at Toronto Metropoliton University, Aronno Das and Ashwin Sundaresan completed several design projects to implement VDHL code on an FPGA Board (Cyclone- II EP2C35F672C6) in Quartus II. 
 - <b>[ASU](https://github.com/aronnod/VHDL/tree/ASU) </b>
   - Designed and implemented a 4-bit Adder/Subtractor Unit (ASU)
   - Created a Combinational Circuit that takes the decoded output of the ASU. This circuit was specifically designed to output individual digits of the Student Identification number.
