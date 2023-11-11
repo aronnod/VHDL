@@ -1,0 +1,88 @@
+|JohnsonCounter
+leds1 <= sseg:inst1.leds1
+Clear => johns:inst.Clrn
+E => johns:inst.E
+Clock => johns:inst.Clkn
+leds2 <= sseg:inst1.leds2
+leds3 <= sseg:inst1.leds3
+leds4 <= sseg:inst1.leds4
+leds5 <= sseg:inst1.leds5
+leds6 <= sseg:inst1.leds6
+leds7 <= sseg:inst1.leds7
+leds21 <= sseg:inst1.leds21
+leds22 <= sseg:inst1.leds22
+leds23 <= sseg:inst1.leds23
+leds24 <= sseg:inst1.leds24
+leds25 <= sseg:inst1.leds25
+leds26 <= sseg:inst1.leds26
+leds27 <= sseg:inst1.leds27
+Q[2] <= johns:inst.Q[2]
+Q[1] <= johns:inst.Q[1]
+Q[0] <= johns:inst.Q[0]
+
+
+|JohnsonCounter|sseg:inst1
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[0] => Mux3.IN19
+bcd[0] => Mux4.IN19
+bcd[0] => Mux5.IN19
+bcd[0] => Mux6.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[1] => Mux3.IN18
+bcd[1] => Mux4.IN18
+bcd[1] => Mux5.IN18
+bcd[1] => Mux6.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[2] => Mux3.IN17
+bcd[2] => Mux4.IN17
+bcd[2] => Mux5.IN17
+bcd[2] => Mux6.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+bcd[3] => Mux3.IN16
+bcd[3] => Mux4.IN16
+bcd[3] => Mux5.IN16
+bcd[3] => Mux6.IN16
+neg => leds2[7].DATAIN
+leds[7] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+leds2[7] <= neg.DB_MAX_OUTPUT_PORT_TYPE
+leds2[6] <= <VCC>
+leds2[5] <= <VCC>
+leds2[4] <= <VCC>
+leds2[3] <= <VCC>
+leds2[2] <= <VCC>
+leds2[1] <= <VCC>
+
+
+|JohnsonCounter|johns:inst
+Clrn => Qreg[2].ACLR
+Clrn => Qreg[1].ACLR
+Clrn => Qreg[0].ACLR
+E => Qreg[0].ENA
+E => Qreg[1].ENA
+E => Qreg[2].ENA
+Clkn => Qreg[2].CLK
+Clkn => Qreg[1].CLK
+Clkn => Qreg[0].CLK
+STUDENT_ID[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+STUDENT_ID[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+STUDENT_ID[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+STUDENT_ID[3] <= <GND>
+Q[2] <= Qreg[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Qreg[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= Qreg[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
