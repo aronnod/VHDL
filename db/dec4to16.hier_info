@@ -1,0 +1,143 @@
+|dec4to16
+OP[0] <= dec3to8:inst.z[0]
+OP[1] <= dec3to8:inst.z[1]
+OP[2] <= dec3to8:inst.z[2]
+OP[3] <= dec3to8:inst.z[3]
+OP[4] <= dec3to8:inst.z[4]
+OP[5] <= dec3to8:inst.z[5]
+OP[6] <= dec3to8:inst.z[6]
+OP[7] <= dec3to8:inst.z[7]
+OP[8] <= dec3to8:inst1.z[0]
+OP[9] <= dec3to8:inst1.z[1]
+OP[10] <= dec3to8:inst1.z[2]
+OP[11] <= dec3to8:inst1.z[3]
+OP[12] <= dec3to8:inst1.z[4]
+OP[13] <= dec3to8:inst1.z[5]
+OP[14] <= dec3to8:inst1.z[6]
+OP[15] <= dec3to8:inst1.z[7]
+En => inst3.IN0
+En => inst2.IN1
+S[0] => dec3to8:inst1.v[0]
+S[0] => dec3to8:inst.v[0]
+S[1] => dec3to8:inst1.v[1]
+S[1] => dec3to8:inst.v[1]
+S[2] => dec3to8:inst1.v[2]
+S[2] => dec3to8:inst.v[2]
+S[3] => inst3.IN1
+S[3] => inst4.IN0
+
+
+|dec4to16|dec3to8:inst1
+z[7] <= dec2to4:inst3.y[3]
+z[6] <= dec2to4:inst3.y[2]
+z[5] <= dec2to4:inst3.y[1]
+z[4] <= dec2to4:inst3.y[0]
+z[3] <= dec2to4:inst.y[3]
+z[2] <= dec2to4:inst.y[2]
+z[1] <= dec2to4:inst.y[1]
+z[0] <= dec2to4:inst.y[0]
+v[0] => dec2to4:inst.w[0]
+v[0] => dec2to4:inst3.w[0]
+v[1] => dec2to4:inst.w[1]
+v[1] => dec2to4:inst3.w[1]
+v[2] => inst1.IN0
+v[2] => inst4.IN1
+En => inst2.IN1
+En => inst4.IN0
+
+
+|dec4to16|dec3to8:inst1|dec2to4:inst
+w[0] => Mux0.IN10
+w[0] => Mux1.IN10
+w[0] => Mux2.IN10
+w[0] => Mux3.IN10
+w[1] => Mux0.IN9
+w[1] => Mux1.IN9
+w[1] => Mux2.IN9
+w[1] => Mux3.IN9
+En => Mux0.IN8
+En => Mux1.IN8
+En => Mux2.IN8
+En => Mux3.IN8
+y[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+y[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dec4to16|dec3to8:inst1|dec2to4:inst3
+w[0] => Mux0.IN10
+w[0] => Mux1.IN10
+w[0] => Mux2.IN10
+w[0] => Mux3.IN10
+w[1] => Mux0.IN9
+w[1] => Mux1.IN9
+w[1] => Mux2.IN9
+w[1] => Mux3.IN9
+En => Mux0.IN8
+En => Mux1.IN8
+En => Mux2.IN8
+En => Mux3.IN8
+y[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+y[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dec4to16|dec3to8:inst
+z[7] <= dec2to4:inst3.y[3]
+z[6] <= dec2to4:inst3.y[2]
+z[5] <= dec2to4:inst3.y[1]
+z[4] <= dec2to4:inst3.y[0]
+z[3] <= dec2to4:inst.y[3]
+z[2] <= dec2to4:inst.y[2]
+z[1] <= dec2to4:inst.y[1]
+z[0] <= dec2to4:inst.y[0]
+v[0] => dec2to4:inst.w[0]
+v[0] => dec2to4:inst3.w[0]
+v[1] => dec2to4:inst.w[1]
+v[1] => dec2to4:inst3.w[1]
+v[2] => inst1.IN0
+v[2] => inst4.IN1
+En => inst2.IN1
+En => inst4.IN0
+
+
+|dec4to16|dec3to8:inst|dec2to4:inst
+w[0] => Mux0.IN10
+w[0] => Mux1.IN10
+w[0] => Mux2.IN10
+w[0] => Mux3.IN10
+w[1] => Mux0.IN9
+w[1] => Mux1.IN9
+w[1] => Mux2.IN9
+w[1] => Mux3.IN9
+En => Mux0.IN8
+En => Mux1.IN8
+En => Mux2.IN8
+En => Mux3.IN8
+y[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+y[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dec4to16|dec3to8:inst|dec2to4:inst3
+w[0] => Mux0.IN10
+w[0] => Mux1.IN10
+w[0] => Mux2.IN10
+w[0] => Mux3.IN10
+w[1] => Mux0.IN9
+w[1] => Mux1.IN9
+w[1] => Mux2.IN9
+w[1] => Mux3.IN9
+En => Mux0.IN8
+En => Mux1.IN8
+En => Mux2.IN8
+En => Mux3.IN8
+y[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+y[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,236 @@
+$comment
+	File created using the following command:
+		vcd file dec4to16.msim.vcd -direction
+$end
+$date
+	Sun Dec 04 16:59:00 2022
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module dec4to16_vlg_vec_tst $end
+$var reg 1 ! En $end
+$var reg 4 " S [3:0] $end
+$var wire 1 # OP [15] $end
+$var wire 1 $ OP [14] $end
+$var wire 1 % OP [13] $end
+$var wire 1 & OP [12] $end
+$var wire 1 ' OP [11] $end
+$var wire 1 ( OP [10] $end
+$var wire 1 ) OP [9] $end
+$var wire 1 * OP [8] $end
+$var wire 1 + OP [7] $end
+$var wire 1 , OP [6] $end
+$var wire 1 - OP [5] $end
+$var wire 1 . OP [4] $end
+$var wire 1 / OP [3] $end
+$var wire 1 0 OP [2] $end
+$var wire 1 1 OP [1] $end
+$var wire 1 2 OP [0] $end
+$var wire 1 3 sampler $end
+$scope module i1 $end
+$var wire 1 4 gnd $end
+$var wire 1 5 vcc $end
+$var wire 1 6 unknown $end
+$var tri1 1 7 devclrn $end
+$var tri1 1 8 devpor $end
+$var tri1 1 9 devoe $end
+$var wire 1 : En~combout $end
+$var wire 1 ; inst1|inst3|Mux3~4_combout $end
+$var wire 1 < inst1|inst3|Mux3~5_combout $end
+$var wire 1 = inst1|inst3|Mux2~4_combout $end
+$var wire 1 > inst1|inst3|Mux2~5_combout $end
+$var wire 1 ? inst1|inst3|Mux1~0_combout $end
+$var wire 1 @ inst1|inst3|Mux0~0_combout $end
+$var wire 1 A inst1|inst|Mux3~4_combout $end
+$var wire 1 B inst1|inst|Mux3~5_combout $end
+$var wire 1 C inst1|inst|Mux2~4_combout $end
+$var wire 1 D inst1|inst|Mux1~0_combout $end
+$var wire 1 E inst1|inst|Mux0~0_combout $end
+$var wire 1 F inst|inst|Mux3~4_combout $end
+$var wire 1 G inst|inst3|Mux3~4_combout $end
+$var wire 1 H inst|inst3|Mux2~4_combout $end
+$var wire 1 I inst|inst3|Mux2~5_combout $end
+$var wire 1 J inst|inst3|Mux1~0_combout $end
+$var wire 1 K inst|inst3|Mux0~0_combout $end
+$var wire 1 L inst|inst|Mux3~5_combout $end
+$var wire 1 M inst|inst|Mux2~4_combout $end
+$var wire 1 N inst|inst|Mux1~0_combout $end
+$var wire 1 O inst|inst|Mux0~0_combout $end
+$var wire 1 P S~combout [3] $end
+$var wire 1 Q S~combout [2] $end
+$var wire 1 R S~combout [1] $end
+$var wire 1 S S~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+b0 "
+12
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+x3
+04
+15
+x6
+17
+18
+19
+1:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+1H
+0I
+0J
+0K
+0L
+0M
+0N
+1O
+0S
+0R
+0Q
+0P
+$end
+#80000
+b1 "
+1S
+03
+0H
+1F
+0O
+1N
+02
+11
+#160000
+b11 "
+b10 "
+0S
+1R
+13
+1H
+0F
+0N
+1L
+1A
+1M
+0L
+01
+1/
+10
+0/
+#240000
+b11 "
+1S
+03
+0H
+1F
+0M
+1L
+00
+1/
+#320000
+b111 "
+b101 "
+b100 "
+0S
+0R
+1Q
+13
+1H
+0F
+0L
+1J
+0A
+1K
+0J
+0/
+1-
+1.
+0-
+#400000
+b101 "
+1S
+03
+0H
+1F
+0K
+1J
+0.
+1-
+#480000
+b111 "
+b110 "
+0S
+1R
+13
+1H
+0F
+0J
+1G
+1I
+0G
+0-
+1+
+1,
+0+
+#560000
+b111 "
+1S
+03
+0H
+1F
+0I
+1G
+0,
+1+
+#640000
+b1111 "
+b1011 "
+b1001 "
+b1000 "
+0S
+0R
+0Q
+1P
+13
+0F
+1=
+1N
+0G
+0N
+1E
+11
+0+
+01
+1*
+#720000

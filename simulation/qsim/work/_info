@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\lathi\OneDrive - Ryerson University\Courses\COE328_Labs\Lab6\4x16 Decoder\simulation\qsim
+vdec4to16
+Z1 !s100 H;HHo8ZYDhW[dUGXF89]X2
+Z2 IPMB`>iBK_Y6B7K2];D3lO0
+Z3 VFg?WImO[nMJ3KYhcTf:3F2
+Z4 dC:\Users\lathi\OneDrive - Ryerson University\Courses\COE328_Labs\Lab6\4x16 Decoder\simulation\qsim
+Z5 w1670191138
+Z6 8dec4to16.vo
+Z7 Fdec4to16.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|dec4to16.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1670191139.550000
+Z12 !s107 dec4to16.vo|
+!s101 -O0
+vdec4to16_vlg_check_tst
+!i10b 1
+Z13 !s100 o5Y;II;5Z<E`Ng8f`6o:N1
+Z14 IgWbWfFLVedn>KHiSkFUk81
+Z15 VQFZ5PUa`c71iDLamF9FHN1
+R4
+Z16 w1670191137
+Z17 8dec4to16.vt
+Z18 Fdec4to16.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z19 !s108 1670191139.731000
+Z20 !s107 dec4to16.vt|
+Z21 !s90 -work|work|dec4to16.vt|
+!s101 -O0
+R10
+vdec4to16_vlg_sample_tst
+!i10b 1
+Z22 !s100 `@^XN8haD:5WT@I_:2nh`3
+Z23 IMe@7:]gQVjl8@GWdio4OS0
+Z24 VfNB;A>HFN7me^@lkg@lMl1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vdec4to16_vlg_vec_tst
+!i10b 1
+Z25 !s100 PXeVTAmhC48]PXb;>m@:;3
+Z26 Id]4^3bkU<4anRHNAbb9zL2
+Z27 V5bl7TPZek9OWeng<eomSn3
+R4
+R16
+R17
+R18
+Z28 L0 423
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
