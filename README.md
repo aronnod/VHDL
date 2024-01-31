@@ -13,3 +13,6 @@ As part of coursework at Toronto Metropoliton University, Aronno Das and Ashwin 
 - <b>[Johnson Counter](https://github.com/aronnod/VHDL/tree/Johnson-Counter) </b>
   - Designed and implemented a Johnson Counter, a specialized ring counter with a distinctive cycling pattern, to efficiently traverse through different states. This circuit was specifically designed to output individual digits of the Student Identification number.
   - The output of the designed circuit was visually represented on a 7-Segment display
+
+- <b>[GPU](https://github.com/aronnod/VHDL/tree/GPU) </b>
+  - Designed and implemented a GPU capable of performing operations and pushing digits into a 7-Segment display. View the report: https://docs.google.com/document/d/e/2PACX-1vRgYUUSnrTEgW28uZRH5DMTS93c7FWsBzRcpziGEWOyE1wDIHeQa3tNbgSivg6bPcI5V6ZRQFq3_0PE/pub
